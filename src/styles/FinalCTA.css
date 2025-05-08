@@ -1,0 +1,68 @@
+.final-cta {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: var(--primary-dark);
+  }
+  
+  .final-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--accent-teal), var(--highlight-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .final-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255,255,255,0.85);
+  }
+  
+  .final-cta .btn {
+    background: var(--codecanyon-purple);
+    border: 2px solid var(--codecanyon-purple);
+    color: var(--text-light);
+  }
+  
+  .final-cta .btn:hover {
+    background: transparent;
+    color: var(--codecanyon-purple);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .final-cta {
+      padding: 4rem 1.5rem;  
+    }
+    
+    .final-cta h2 {
+      font-size: 2rem; 
+    }
+    
+    .final-cta p {
+      font-size: 1rem;
+    }
+    
+    .final-cta .btn {
+      padding: 0.8rem 2rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .final-cta {
+      padding: 3rem 1rem; 
+    }
+    
+    .final-cta h2 {
+      font-size: 1.8rem; 
+    }
+    
+    .final-cta p {
+      font-size: 0.9rem; 
+    }
+    
+    .final-cta .btn {
+      padding: 0.7rem 1.5rem;  
+    }
+  }
+  

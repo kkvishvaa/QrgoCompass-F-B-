@@ -1,0 +1,77 @@
+.timeline {
+    position: relative;
+    padding: 6rem 2rem;
+    background: #1E2232;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: var(--codecanyon-purple);
+  }
+  
+  .timeline-step {
+    position: relative;
+    width: 45%;
+    padding: 2rem;
+    background: var(--card-dark);
+    border-radius: 15px;
+    margin: 2rem 0;
+    border: 1px solid rgba(78,85,109,0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+
+  .timeline-step:nth-child(odd) {
+    margin-left: 55%;
+  }
+  
+
+  .timeline-step:nth-child(even) {
+    margin-left: 0;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .timeline {
+      padding: 4rem 1.5rem; 
+    }
+  
+    .timeline-step {
+      width: 90%;  
+      margin: 1.5rem 0; 
+    }
+  
+    .timeline-step:nth-child(odd) {
+      margin-left: 0;  
+    }
+  
+    .timeline-step:nth-child(even) {
+      margin-left: 0; 
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .timeline {
+      padding: 3rem 1rem; 
+    }
+  
+    .timeline-step {
+      width: 100%;  
+      padding: 1.5rem; 
+      margin: 1rem 0; 
+    }
+  
+    .timeline-step:nth-child(odd),
+    .timeline-step:nth-child(even) {
+      margin-left: 0;  
+    }
+  }
+  

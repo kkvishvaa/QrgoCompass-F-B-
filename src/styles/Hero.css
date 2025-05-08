@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, rgba(26, 30, 44, 0.85), rgba(26, 30, 44, 0.6)),
+                url('/ship2.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    flex-direction: column;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(45deg, var(--accent-teal), var(--highlight-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    color: rgba(248, 249, 250, 0.9);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+  }
+  
+  .btn .fas {
+    margin-right: 8px;
+  }
+  
+  .btn-primary {
+    background: var(--codecanyon-purple);
+    color: var(--text-light);
+    border: 2px solid var(--codecanyon-purple);
+  }
+  
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--codecanyon-purple);
+  }
+  
+  .btn-secondary {
+    border: 2px solid var(--accent-teal);
+    color: var(--accent-teal);
+  }
+  
+  .btn-secondary:hover {
+    background: var(--accent-teal);
+    color: var(--primary-dark);
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      font-size: 0.95rem;
+      padding: 0.9rem 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 5rem 1.5rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  
+    .btn {
+      padding: 0.85rem 1.5rem;
+      font-size: 0.9rem;
+      margin: 0.5rem 0.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 4rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      padding: 0.75rem 1.25rem;
+      font-size: 0.85rem;
+      flex-direction: row;
+    }
+  }
+  
